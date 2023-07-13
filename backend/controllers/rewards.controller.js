@@ -5,7 +5,7 @@ const rewardsController = () => {
     const recordSet = getRecordset()
 
     const getRewards = async (req, res) => {
-        return res.status(200).json({ response: 'succes', data: recordSet})
+        return res.status(200).json({ response: 'success', data: recordSet})
     }
 
     return {

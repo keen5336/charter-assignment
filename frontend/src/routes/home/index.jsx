@@ -1,14 +1,17 @@
 import React from 'react'
 import useHome from './home'
-import PinnedSubheaderList from './rewards-list'
+import RewardsList from '../../components/rewards-list/index'
 
 const Home = () => {
-  const { yes } = useHome()
+  const { dataset } = useHome()
   return (
     <>
-      <div>Home</div>
-      <div>{ yes }</div>
-      <PinnedSubheaderList />
+      <h1>Home</h1>
+      {
+        dataset.length > 0 ? (
+          <RewardsList dataset={dataset} />
+        ): null
+      }
     </>
   )
 }
