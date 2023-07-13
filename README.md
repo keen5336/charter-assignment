@@ -10,7 +10,7 @@ This is by far not the best way to construct the app.
 
 A better way would be to store pre calculated data in the database and perform a proper query on optimized date values.
 
-Have the back end sanitize the query and simply return the record set from the database directly to the front end
+Have the back end sanitize the query, return the record set from the database with very few changes to the front end
 
 There should be little to no calculations on the front end, it should arrive in the proper format, and number calculations should NOT be performed on the front end.
 
