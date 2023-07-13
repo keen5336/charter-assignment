@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { getRewards } from '../../globals/http-requests'
 
-const useDashboard = () => {
+const useHome = () => {
     const [yes, setYes] = useState('true')
 
     useEffect(() => {
@@ -17,4 +17,4 @@ const useDashboard = () => {
     }
 }
 
-export default useDashboard
+export default useHome
